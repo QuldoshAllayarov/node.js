@@ -1,0 +1,116 @@
+Solution 1
+ 
+// const arr1 = [18, 82, 5, 12, 4, 30];
+
+// function maxmin(arr1){
+//     let resultMax = arr1[0];
+//     let resultMin = arr1[1];
+//     for(let i = 0; i < arr1.length; i++){
+//         if(arr1[i] > resultMax) {
+//             resultMax = arr1[i];
+//         }
+//         if(arr1[i] < resultMin) {
+//             resultMin = arr1[i];
+//         }
+//     }
+//     return `max: ${resultMax} min: ${resultMin}`;
+// }
+
+// maxmin(arr1);
+// console.log(maxmin(arr1));
+
+
+// // Solution 2
+
+// const arr = [10,3,8,1,33,12,22,123,1,90,7];
+
+// function getMaxMin(arr){
+//     let maximum = arr[0];
+//     let minimum = arr[0];
+//     for (let i = 0 ; i < arr.length; i++) {
+//       if (maximum < arr[i]) {
+//         maximum = arr[i];
+//       } else {
+//         minimum = arr[i];
+//       }
+      
+//     }
+//    let result =  ([maximum, minimum]); 
+//     return result;
+//   };
+// console.log(getMaxMin(arr));
+
+// const movies = [
+//     {title: 'Baron',yers: 2018,rating: 4.5},
+//     {title: 'Sotqin',yers: 2016,rating: 4.7},
+//     {title: 'Timur',yers: 2019,rating: 3},
+//     {title: 'Vatan',yers: 2014,rating: 1}
+    
+// ]
+// console.log(movies);
+
+
+////>>>>>>>>>>>>>>>>5-misol
+
+
+const numbers = [1,2,3,4,5];
+const count =  countOccurances(numbers, 1);
+console.log(countOccurances());
+
+
+
+
+
+
+// bugungi
+
+//class
+ 
+
+function createID(number){
+    let ids = [];
+    for(let i=0;i<number;i++){
+        ids.push(`${Date.now()} ${i}`);
+    }
+    return ids;
+}
+console.log("IDS: ",createID( 5));
+
+function createEMAILS(arr){
+    const emails = [];
+    for(let i = 1; i < arr.length; i++){
+        emails.push(`${arr[i]}@gmail.com`);
+    }
+    return emails;
+}
+
+function cerateUSER(number) {
+    const usernames = [];
+    for(let i = 1;i <= number; i++){
+        usernames.push(`user${i}`);
+    }
+    return usernames;
+}
+const usernames = cerateUSER(5);
+console.log('EMEILS: ',createEMAILS(usernames));
+
+function createPASSWORD(users){
+    const passwords = [];
+    for(let i = 0; i < users.length; i++){
+        passwords.push(`${i+1} ${Date.now()} ${users[i]}`);
+    }
+    return passwords;
+}
+console.log('PASSWORD: ',createPASSWORD(usernames));
+
+
+
+
+
+
+
+
+
+
+
+
